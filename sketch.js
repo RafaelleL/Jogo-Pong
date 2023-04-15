@@ -61,7 +61,7 @@ function draw() {
   
   incluirPlacar();
   marcarPontos();
-  
+ 
   
 }
 
@@ -98,7 +98,6 @@ function mostraRaquete (x , y){
   
 }
 
-
 //movimentação raquetes
 function movimentoRaquete(){
 if (keyIsDown(UP_ARROW) && yRaquete >= 0){
@@ -126,7 +125,7 @@ function movimentaRaqueteOponente(){
   yRaqueteOponente += velYRaqueteOponente;
 }
 
-//Colisão bolinha raquete
+//Colisão bolinha raquete, feita pela biblioteca p5.collide.2d
 function colisaoRaqueteBiblioteca(x, y){
   
   colidiu = 
@@ -137,12 +136,21 @@ function colisaoRaqueteBiblioteca(x, y){
   }
 }
 
-//Funçoes do placar
+//Funçoes do placar,a cor e posição 
 function incluirPlacar(){
-  fill(255);
-  text(pontosMeus, 200, 26);
-  text(pontosOponente, 400, 26);
+  stroke (255);
+  textAlign(CENTER);
+  textSize (16);
   
+  fill (color(255, 140, 0));
+  rect (380, 10, 40, 20); 
+  fill (255);
+  text(pontosMeus, 400, 26);
+  
+  fill (color(255, 140, 0));
+  rect (180, 10, 40, 20); 
+  fill (255);
+  text(pontosOponente, 200, 26);
   
 }
 
@@ -154,8 +162,6 @@ function marcarPontos(){
     pontosOponente+=1;
   }
 }
-
-
 
 
 
