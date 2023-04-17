@@ -20,7 +20,7 @@
     animações para web</p>
   
   <h2> Como contribuir </h2>
-  <p>Se quiser contribuir com o desenvolvimento do jogo, fique á vontade para criar um fork deste
+  <p>Se quiser contribuir com o desenvolvimento do jogo, fique a vontade para criar um fork deste
     repositório e enviar suas sugestões de melhorias ou correções de bugs por meio de pull
     requests.  </p>
   
