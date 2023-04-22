@@ -27,7 +27,7 @@ let velYRaqueteOponente;
 let pontosMeus=0;
 let pontosOponente=0;
 
-let chanceErro = 0.05; 
+let chanceErro = 0.10; 
 
 //propriedades iniciais do ambiente
 function setup() {
@@ -122,6 +122,14 @@ function movimentaRaqueteOponente(){
       velYRaqueteOponente *= -1;
     }
   }
+  
+  if (yRaqueteOponente < 0) {
+  yRaqueteOponente = 0;
+}
+
+if (yRaqueteOponente > height - raqueteAltura) {
+  yRaqueteOponente = height - raqueteAltura;
+}
   yRaqueteOponente += velYRaqueteOponente;
 }
 
@@ -162,6 +170,7 @@ function marcarPontos(){
     pontosOponente+=1;
   }
 }
+
 
 
 
