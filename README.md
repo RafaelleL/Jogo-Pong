@@ -1,6 +1,6 @@
 <div>
 <h1> Pong - O clássico jogo agora em JavaScript </h1>
-  <img width="600" height="auto" src=" ">
+  <img width="600" height="auto" src="https://github.com/RafaelleL/Jogo-Pong/blob/main/Screenshot_1%20.png ">
 </div>
 
 <div>
